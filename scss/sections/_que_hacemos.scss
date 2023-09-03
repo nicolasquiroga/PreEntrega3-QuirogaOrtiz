@@ -1,0 +1,84 @@
+/* Formato a Hoja Qué hacemos */
+
+#que_hacemos {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
+    align-items: center;
+}
+
+#que_hacemos .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+        "seccion__1_1 seccion__1_2 seccion__1_3"
+        "seccion__2_1 seccion__2_2 seccion__2_3";
+    align-items: start;
+    justify-items: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+.seccion__1_1 {
+    grid-area: seccion__1_1;
+}
+
+.seccion__1_2 {
+    grid-area: seccion__1_2;
+}
+
+.seccion__1_3 {
+    grid-area: seccion__1_3;
+}
+
+.seccion__2_1 {
+    grid-area: seccion__2_1;
+}
+
+.seccion__2_2 {
+    grid-area: seccion__2_2;
+}
+
+.seccion__2_3 {
+    grid-area: seccion__2_3;
+}
+
+#que_hacemos .section__img {
+    display: block;
+    width: 20vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+#que_hacemos section div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+
+}
+
+#que_hacemos .section div:hover {
+    color: #22AAA1;
+}
+
+#que_hacemos section .titulo_imagen {
+    display: inline-block;
+    font-family: "titulos_grandes";
+    font-weight: 700;
+    font-size: large;
+    padding: 5px 0;
+}
+
+/* #que_hacemos .section p:not(.titulo_imagen) { */
+#que_hacemos .section p {
+    width: 20vw;
+}
+
+
+#que_hacemos .titulo {
+    margin: 20px;
+}

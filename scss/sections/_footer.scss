@@ -1,0 +1,26 @@
+/* Formato al FOOTER */
+.footer {
+    display: flex;
+    height: 13vh;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer .img-sm {
+    display: none;
+}
+
+.footer img {
+    display: inline-block;
+    width: 15vh;
+    height: auto;
+}
+
+.footer a {
+    display: inline-block;
+}
+
+.footer p {
+    display: inline-block;
+}

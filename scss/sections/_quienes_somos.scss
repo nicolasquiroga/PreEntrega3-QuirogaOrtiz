@@ -1,0 +1,35 @@
+/* Formato a página Quiénes Somos */
+
+#quienes_somos {
+    margin: auto;
+}
+
+#quienes_somos h1 {
+    font-family: "titulos_grandes";
+}
+
+#quienes_somos .seccion_1 {
+    display: block;
+    text-align: center;
+}
+
+
+#quienes_somos .seccion_2 div img {
+    /* display: inline-block; */
+    max-width: 25vw;
+    width:25vw;
+    border-radius: 15px;
+
+}
+
+#quienes_somos .seccion_2 .titulo_imagen {
+    font-family: "titulos_grandes";
+    font-size: 30px;
+    text-align: center;
+}
+
+#quienes_somos .seccion_2 p {
+    text-align: center;
+    font-size: 20px;
+}
+

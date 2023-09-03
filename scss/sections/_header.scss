@@ -1,0 +1,63 @@
+/* Formato General a todos los headers */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    /* width: 100vw;  */
+    height: 15vh;
+}
+
+.header img {
+    width: 20vh;
+    height: auto;
+}
+
+.header nav {
+    text-align: right;
+}
+
+/* Se oculta navbar de bootstrap en versión de escritorioo */
+.header .navbar {
+    display: none;
+}
+
+.header ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.header a {
+    text-decoration: none;
+    color: #2B2D42;
+
+}
+
+.header a:hover {
+    color: #22AAA1;
+}
+
+.header a:visited {
+    color: #2B2D42;
+}
+
+.header li {
+    display: flex;
+    list-style: none;
+    padding: 5px 15px;
+    margin: 4px 4px;
+    align-items: center;
+
+}
+
+.header .li--active {
+    background-color: #2B2D42;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+
+.header .li--active a {
+    color: #FFFFFF;
+}
