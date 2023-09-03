@@ -1,99 +1,10 @@
 @charset "UTF-8";
-/* Fuente local */
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap");
-@font-face {
-  font-family: "titulos_grandes";
-  src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf); }
-
-/* Fuente Web */
-/* Para usar, copiar: font-family: 'Lato', sans-serif; */
 /* Formateo de documentos en general */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif; }
-
-:root {
-  --color-uno: #FFFFFF;
-  --color-dos: #2B2D42;
-  --color-tres: #22AAA1;
-  --color-cuatro: #B86F52;
-  --color-cinco: #F78764; }
-
-/* Formato General a todos los headers */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  /* width: 100vw;  */
-  height: 15vh; }
-
-.header img {
-  width: 20vh;
-  height: auto; }
-
-.header nav {
-  text-align: right; }
-
-/* Se oculta navbar de bootstrap en versión de escritorioo */
-.header .navbar {
-  display: none; }
-
-.header ul {
-  display: flex;
-  justify-content: flex-end; }
-
-.header a {
-  text-decoration: none;
-  color: #2B2D42; }
-
-.header a:hover {
-  color: #22AAA1; }
-
-.header a:visited {
-  color: #2B2D42; }
-
-.header li {
-  display: flex;
-  list-style: none;
-  padding: 5px 15px;
-  margin: 4px 4px;
-  align-items: center; }
-
-.header .li--active {
-  background-color: #2B2D42;
-  padding: 15px 15px;
-  border-radius: 5px; }
-
-.header .li--active a {
-  color: #FFFFFF; }
-
-.navbar {
-  display: none; }
-
-/* Formato al FOOTER */
-.footer {
-  display: flex;
-  height: 13vh;
-  background-color: #FFFFFF;
-  align-items: center;
-  justify-content: space-around; }
-
-.footer .img-sm {
-  display: none; }
-
-.footer img {
-  display: inline-block;
-  width: 15vh;
-  height: auto; }
-
-.footer a {
-  display: inline-block; }
-
-.footer p {
-  display: inline-block; }
 
 /* Formato h1 general */
 h1:hover {
@@ -105,6 +16,66 @@ h1 {
 /* Formato a general */
 a {
   text-decoration: none; }
+
+/* Fuente local */
+@font-face {
+  font-family: "titulos_grandes";
+  src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf); }
+
+/* Fuente Web */
+/* Para usar, copiar: font-family: 'Lato', sans-serif; */
+/* Formato General a todos los headers */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* width: 100vw;  */
+  height: 15vh; }
+  .header div img {
+    width: 20vh;
+    height: auto; }
+  .header nav {
+    text-align: right; }
+    .header nav ul {
+      display: flex;
+      justify-content: flex-end; }
+      .header nav ul li {
+        display: flex;
+        list-style: none;
+        padding: 5px 15px;
+        margin: 4px 4px;
+        align-items: center; }
+        .header nav ul li a {
+          text-decoration: none;
+          color: #2B2D42; }
+        .header nav ul li a:hover {
+          color: #22AAA1; }
+      .header nav ul .li--active {
+        background-color: #2B2D42;
+        padding: 15px 15px;
+        border-radius: 5px; }
+        .header nav ul .li--active a {
+          color: #FFFFFF; }
+
+/* Formato al FOOTER */
+.footer {
+  display: flex;
+  height: 13vh;
+  background-color: #FFFFFF;
+  align-items: center;
+  justify-content: space-around; }
+  .footer .img-sm {
+    display: none; }
+  .footer img {
+    display: inline-block;
+    width: 15vh;
+    height: auto; }
+  .footer a {
+    display: inline-block; }
+  .footer p {
+    display: inline-block; }
 
 /* Formato al Index */
 #index__main {
@@ -336,6 +307,9 @@ a {
   width: 50vw;
   height: 40vh;
   border-radius: 10px; }
+
+.navbar {
+  display: none; }
 
 @media (max-width: 1430px) {
   /* … */ }

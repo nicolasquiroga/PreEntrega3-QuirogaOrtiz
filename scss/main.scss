@@ -6,9 +6,10 @@
 
 
 // SECCIONES
-@import url('./sections/_header.scss');
-@import url('./sections/_footer.scss');
-@import url('./sections/_index.scss');
+// El siguiente formato de código NO FUNCIONA NO USAR, usar directamente sin url('....')
+@import './sections/media_querys';
+@import './sections/header';
+@import './sections/footer';
 @import './sections/index';
 @import './sections/que_hacemos';
 @import './sections/quienes_somos';
@@ -16,7 +17,7 @@
 @import './sections/contacto';
 
 // BOOTSTRAP
-@import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../node_modules/bootstrap/scss/bootstrap";
 
 .navbar {
     display: none;
