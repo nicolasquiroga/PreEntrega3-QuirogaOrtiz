@@ -16,7 +16,24 @@
     .seccion_2 {
 
         div {
+
             .div__img {
+
+
+                margin: 0 0 2rem 0;
+                padding: 1rem 0 0 0;
+                border-radius: 15px;
+
+                // &:hover {
+                //     background-color: $color-dos;
+                //     .titulo_imagen {
+                //         color: $color-tres;
+                //     }
+                //     .div__texto {
+                //         color: $color-uno;
+                //     }
+                // }
+
                 img {
                     /* display: inline-block; */
                     max-width: 25vw;

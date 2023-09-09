@@ -58,7 +58,7 @@
             overflow: hidden;
             object-fit: cover;
             align-items: center;
-
+            transition: background-color 0.15s;
 
             .section__img {
                 display: block;
@@ -86,12 +86,16 @@
             }
 
             &:hover {
-                color: $color-uno;
-                background-color: $color-dos;
-    
                 .titulo_imagen {
                     color: $color-tres;
+
                 }
+                .imagen_descripcion{
+                color: $color-uno;
+                }
+                background-color: $color-dos;
+                // transition: 0.2s;
+
             }
         }
 
