@@ -1,6 +1,13 @@
 @charset "UTF-8";
-/* Formateo de documentos en general */
+/* Fuente local */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap");
+@font-face {
+  font-family: "titulos_grandes";
+  src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf); }
+
+/* Fuente Web */
+/* Para usar, copiar: font-family: 'Lato', sans-serif; */
+/* Formateo de documentos en general */
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +18,9 @@ h1 {
 
 /* Formato a general */
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #2B2D42; }
 
-/* Fuente local */
-@font-face {
-  font-family: "titulos_grandes";
-  src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf); }
-
-/* Fuente Web */
-/* Para usar, copiar: font-family: 'Lato', sans-serif; */
 #quienes_somos .seccion_1 .titulo_h1_imagen, #trabajos_realizados .div_0 .titulo_h1_pagina, #contacto .section-1 .section-1__div1 .titulo_h1_pagina {
   font-family: "titulos_grandes";
   font-size: 3rem; }
@@ -205,12 +206,14 @@ a {
         margin: 0;
         padding: 0;
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        border-radius: 10px; }
         #que_hacemos .section div .contenedor_img .section__img, #que_hacemos .section div .contenedor_img .section__img_xl {
           background-size: cover;
           /* Cubrir completamente el div padre */
           background-position: center;
           /* Centrar la imagen */
+          max-width: 400px;
           width: 110%;
           /* Ajustar el ancho de la imagen al 100% del div padre */
           height: auto;

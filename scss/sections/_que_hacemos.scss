@@ -73,6 +73,7 @@
                 padding: 0;
                 display: flex;
                 justify-content: center;
+                border-radius: 10px;
 
             
 
@@ -81,7 +82,9 @@
                     /* Cubrir completamente el div padre */
                     background-position: center;
                     /* Centrar la imagen */
+                    max-width: 400px;
                     width: 110%;
+                    
                     // width: auto;
                     /* Ajustar el ancho de la imagen al 100% del div padre */
                     height: auto;
