@@ -102,21 +102,28 @@ a {
   display: flex;
   flex-direction: column;
   width: 100vw; }
-  #index__main .div {
-    position: relative;
-    display: inline-block;
-    text-align: center;
+  #index__main .div_background {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 100vw;
+    width: 100vw;
     height: 90vh;
-    overflow: hidden; }
-    #index__main .div .div__img {
-      max-width: 100%;
+    position: relative; }
+    #index__main .div_background::before {
+      content: '';
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      opacity: .45; }
-    #index__main .div .div__h1 {
+      background-image: url("../../resources/bg_cyq_ing_civil.avif");
+      background-size: cover;
+      opacity: 0.35;
+      z-index: -1;
+      /* Coloca el pseudo-elemento detrás del contenido */ }
+    #index__main .div_background .div__h1 {
       max-width: 65vw;
       font-family: "titulos_grandes";
       font-size: 5rem;
@@ -124,25 +131,21 @@ a {
       margin: 20px;
       padding: 10px 40px;
       border-radius: 15px;
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: transform 1.5s ease; }
-      #index__main .div .div__h1:hover {
-        transform: translate(-50%, -50%) scale(1.4); }
-    #index__main .div .div__p {
+      transition: transform 2s; }
+      #index__main .div_background .div__h1:hover {
+        transform: scale(1.4); }
+    #index__main .div_background .div__p {
       font-size: 2.5rem;
       margin: 20px;
       color: #2B2D42;
       padding: 0 15px;
       width: max-content;
-      max-width: 80vw;
+      max-width: 90vw;
       border-radius: 10px;
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
+      text-align: center;
+      transition: 0.5s; }
+      #index__main .div_background .div__p:hover {
+        transform: scale(1.05); }
 
 /* Formato a Hoja Qué hacemos */
 #que_hacemos {
