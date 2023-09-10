@@ -24,8 +24,12 @@
 
     .div_0 {
         align-items: center;
-        text-align: center;
         margin: 20px 0;
+
+        .titulo_h1_pagina {
+            @extend %titulos-h1;
+            text-align: center;
+        }
     }
 
     .div_1 {

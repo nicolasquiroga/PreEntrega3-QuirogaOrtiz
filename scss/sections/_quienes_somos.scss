@@ -7,8 +7,12 @@
         display: block;
         text-align: center;
 
-        h1 {
-            font-family: "titulos_grandes";
+        // h1 {
+        //     font-family: "titulos_grandes";
+        // }
+        .titulo_h1_imagen {
+            @extend %titulos-h1;
+
         }
     }
 

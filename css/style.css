@@ -20,6 +20,10 @@ a {
 
 /* Fuente Web */
 /* Para usar, copiar: font-family: 'Lato', sans-serif; */
+#quienes_somos .seccion_1 .titulo_h1_imagen, #trabajos_realizados .div_0 .titulo_h1_pagina, #contacto .section-1 .section-1__div1 .titulo_h1_pagina {
+  font-family: "titulos_grandes";
+  font-size: 3rem; }
+
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
@@ -215,8 +219,6 @@ a {
   #quienes_somos .seccion_1 {
     display: block;
     text-align: center; }
-    #quienes_somos .seccion_1 h1 {
-      font-family: "titulos_grandes"; }
   #quienes_somos .seccion_2 div .div__img {
     margin: 0 0 2rem 0;
     padding: 1rem 0 0 0;
@@ -252,8 +254,9 @@ a {
     height: auto; }
   #trabajos_realizados .div_0 {
     align-items: center;
-    text-align: center;
     margin: 20px 0; }
+    #trabajos_realizados .div_0 .titulo_h1_pagina {
+      text-align: center; }
   #trabajos_realizados .div_1 {
     display: flex;
     flex-wrap: wrap;
@@ -276,39 +279,27 @@ a {
       padding: 10px 0; }
 
 /* Formato Hoja Contacto */
-#contacto div {
-  display: block;
-  margin: 20px; }
-
 #contacto .section-1 {
   background-color: #2B2D42; }
-
-#contacto .section-1__form {
-  max-width: 75%; }
-
-#contacto .section-1 div {
-  max-width: 50%;
-  background-color: #22aaa1; }
-
-#contacto .section_1__div2 div {
-  margin: 0 0 0 40px; }
-
-#contacto div label {
-  display: inline-block;
-  margin: 0px 20px; }
+  #contacto .section-1 .section-1__form {
+    max-width: 75%; }
+  #contacto .section-1 div {
+    max-width: 50%;
+    background-color: #22aaa1; }
+    #contacto .section-1 div div label {
+      display: inline-block;
+      margin: 0px 20px; }
 
 #contacto .como_llegar {
   margin: auto;
   justify-content: space-between; }
-
-#contacto .como_llegar p {
-  font-family: "titulos_grandes";
-  font-size: 20px; }
-
-#contacto .como_llegar iframe {
-  width: 50vw;
-  height: 40vh;
-  border-radius: 10px; }
+  #contacto .como_llegar p {
+    font-family: "titulos_grandes";
+    font-size: 20px; }
+  #contacto .como_llegar iframe {
+    width: 50vw;
+    height: 40vh;
+    border-radius: 10px; }
 
 @media (max-width: 1430px) {
   /* … */ }

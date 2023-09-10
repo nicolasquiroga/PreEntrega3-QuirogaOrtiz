@@ -1,45 +1,53 @@
 /* Formato Hoja Contacto */
-#contacto div {
-    display: block;
-    margin: 20px;
-}
+#contacto {
 
-#contacto .section-1 {
-    background-color: #2B2D42;
-}
+    // div {
+    //     display: block;
+    //     margin: 20px;
+    // }
 
-#contacto .section-1__form {
-    max-width: 75%;
-}
+    .section-1 {
+        background-color: #2B2D42;
 
-#contacto .section-1 div {
-    max-width: 50%;
-    background-color: #22aaa1;
-}
+        .section-1__div1 {
+            .titulo_h1_pagina {
+                @extend %titulos-h1;
+                // text-align: center;
+            }
+        }
 
-#contacto .section_1__div2 div {
-    margin: 0 0 0 40px;
-}
+        .section-1__form {
+            max-width: 75%;
+        }
 
-#contacto div label {
-    display: inline-block;
-    margin: 0px 20px;
-}
+        div {
+            max-width: 50%;
+            background-color: #22aaa1;
 
-#contacto .como_llegar {
-    margin: auto;
-    justify-content: space-between;
+            div {
+                label {
+                    display: inline-block;
+                    margin: 0px 20px;
+                }
+            }
+        }
+    }
 
-}
+    .como_llegar {
+        margin: auto;
+        justify-content: space-between;
 
-#contacto .como_llegar p {
-    font-family: "titulos_grandes";
-    font-size: 20px;
-}
+        p {
+            font-family: "titulos_grandes";
+            font-size: 20px;
+        }
 
-#contacto .como_llegar iframe {
-    width: 50vw;
-    height: 40vh;
-    border-radius: 10px;
+        iframe {
+            width: 50vw;
+            height: 40vh;
+            border-radius: 10px;
 
+        }
+
+    }
 }
