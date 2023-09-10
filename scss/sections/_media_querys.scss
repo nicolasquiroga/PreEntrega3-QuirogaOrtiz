@@ -12,45 +12,16 @@
         justify-content: space-between;
     }
 
+    // NAVBAR de BOOTSRAP
     .navbar {
         display: block;
         padding: 25px 0;
-    }
 
-    .navbar .navbar-brand {
-        margin: 0 30px;
+        .navbar-brand {
+            margin: 0 30px;
+            font-family: 'Lato', sans-serif;
+        }
     }
-
-    .header .navbar-brand {
-        font-family: 'Lato', sans-serif;
-    }
-
-    .header img {
-        width: 15vh;
-        height: auto;
-        margin: 0px 18px;
-    }
-
-    .header .navbar div div {
-        align-items: center;
-    }
-
-    .header .navbar div div .columna_1 div ul li {
-        height: 2vh;
-        width: 100%;
-        padding: 0;
-        display: block;
-    }
-
-    .header .navbar div div .columna_2 {
-        max-width: 60px;
-    }
-
-    .header .navbar div div div ul li a {
-        width: 100%;
-        padding: 0;
-    }
-
 
     // INDEX page
     #index__main {
@@ -107,6 +78,8 @@
     #que_hacemos {
         .titulo {
             margin: 20px;
+            display: flex;
+            justify-content: center;
         }
 
         .section {
@@ -134,12 +107,18 @@
                 align-items: center;
                 padding-top: 15px;
 
+                .contenedor_img {
+                    // @extend %contenedor-img;
+                    width: 70vw;
+                    height: 35vh;
+
                 .section__img {
                     display: block;
-                    width: 70vw;
+                    width: 100%;
                     height: auto;
                     border-radius: 10px;
                 }
+            }
 
                 .titulo_imagen {
                     display: inline-block;
@@ -348,11 +327,20 @@
     // QUÉ HACEMOS page
 
     #que_hacemos {
+        gap:0;
 
         .section {
             div {
                 padding-top: 15px;
 
+
+                .contenedor_img {
+                    width: 75vw;
+                    height: 30vh;
+                    .section__img {
+
+                    }
+                }
 
                 .imagen_descripcion {
                     width: 85vw;

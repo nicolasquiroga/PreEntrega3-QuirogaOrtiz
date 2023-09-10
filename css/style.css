@@ -25,6 +25,21 @@ a {
   font-family: "titulos_grandes";
   font-size: 3rem; }
 
+#que_hacemos .section div .contenedor_img {
+  /* Ancho del div padre */
+  width: 24vw;
+  /* Alto del div padre */
+  height: 16vh;
+  /* Ocultar partes de la imagen que se desborden */
+  overflow: hidden;
+  /* Para posicionar la imagen de fondo */
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px; }
+
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
@@ -160,7 +175,9 @@ a {
   margin: auto;
   align-items: center; }
   #que_hacemos .titulo {
-    margin: 20px; }
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
   #que_hacemos .section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -194,34 +211,20 @@ a {
       object-fit: cover;
       align-items: center;
       transition: background-color 0.15s; }
-      #que_hacemos .section div .contenedor_img {
-        width: 24vw;
-        /* Ancho del div padre */
-        height: 16vh;
-        /* Alto del div padre */
-        overflow: hidden;
-        /* Ocultar partes de la imagen que se desborden */
-        position: relative;
-        /* Para posicionar la imagen de fondo */
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
+      #que_hacemos .section div .contenedor_img .section__img, #que_hacemos .section div .contenedor_img .section__img_xl {
+        background-size: cover;
+        /* Cubrir completamente el div padre */
+        background-position: center;
+        /* Centrar la imagen */
+        max-width: 400px;
+        width: 110%;
+        /* Ajustar el ancho de la imagen al 100% del div padre */
+        height: auto;
+        /* Ajustar automáticamente la altura según la relación de aspecto */
         border-radius: 10px; }
-        #que_hacemos .section div .contenedor_img .section__img, #que_hacemos .section div .contenedor_img .section__img_xl {
-          background-size: cover;
-          /* Cubrir completamente el div padre */
-          background-position: center;
-          /* Centrar la imagen */
-          max-width: 400px;
-          width: 110%;
-          /* Ajustar el ancho de la imagen al 100% del div padre */
-          height: auto;
-          /* Ajustar automáticamente la altura según la relación de aspecto */
-          border-radius: 10px; }
-        #que_hacemos .section div .contenedor_img .section__img_xl {
-          width: 130%;
-          height: auto; }
+      #que_hacemos .section div .contenedor_img .section__img_xl {
+        width: 130%;
+        height: auto; }
       #que_hacemos .section div .titulo_imagen {
         display: inline-block;
         font-family: "titulos_grandes";
@@ -336,26 +339,9 @@ a {
   .navbar {
     display: block;
     padding: 25px 0; }
-  .navbar .navbar-brand {
-    margin: 0 30px; }
-  .header .navbar-brand {
-    font-family: 'Lato', sans-serif; }
-  .header img {
-    width: 15vh;
-    height: auto;
-    margin: 0px 18px; }
-  .header .navbar div div {
-    align-items: center; }
-  .header .navbar div div .columna_1 div ul li {
-    height: 2vh;
-    width: 100%;
-    padding: 0;
-    display: block; }
-  .header .navbar div div .columna_2 {
-    max-width: 60px; }
-  .header .navbar div div div ul li a {
-    width: 100%;
-    padding: 0; }
+    .navbar .navbar-brand {
+      margin: 0 30px;
+      font-family: 'Lato', sans-serif; }
   #index__main .div {
     position: relative;
     overflow: hidden;
@@ -396,7 +382,9 @@ a {
       object-position: 50% 15%;
       opacity: .45; }
   #que_hacemos .titulo {
-    margin: 20px; }
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
   #que_hacemos .section {
     display: grid;
     grid-template-columns: 1fr;
@@ -414,11 +402,14 @@ a {
       width: 100%;
       align-items: center;
       padding-top: 15px; }
-      #que_hacemos .section div .section__img, #que_hacemos .section div .contenedor_img .section__img_xl {
-        display: block;
+      #que_hacemos .section div .contenedor_img {
         width: 70vw;
-        height: auto;
-        border-radius: 10px; }
+        height: 35vh; }
+        #que_hacemos .section div .contenedor_img .section__img, #que_hacemos .section div .contenedor_img .section__img_xl {
+          display: block;
+          width: 100%;
+          height: auto;
+          border-radius: 10px; }
       #que_hacemos .section div .titulo_imagen {
         display: inline-block;
         font-family: "titulos_grandes";
@@ -548,17 +539,22 @@ a {
       top: 50%;
       left: 45%;
       transform: translate(-50%, -50%); }
-  #que_hacemos .section div {
-    padding-top: 15px; }
-    #que_hacemos .section div .imagen_descripcion {
-      width: 85vw;
-      font-size: 20px; }
-    #que_hacemos .section div .titulo_imagen {
-      display: inline-block;
-      font-family: "titulos_grandes";
-      font-weight: 700;
-      font-size: 25px;
-      padding: 5px 0; }
+  #que_hacemos {
+    gap: 0; }
+    #que_hacemos .section div {
+      padding-top: 15px; }
+      #que_hacemos .section div .contenedor_img {
+        width: 75vw;
+        height: 30vh; }
+      #que_hacemos .section div .imagen_descripcion {
+        width: 85vw;
+        font-size: 20px; }
+      #que_hacemos .section div .titulo_imagen {
+        display: inline-block;
+        font-family: "titulos_grandes";
+        font-weight: 700;
+        font-size: 25px;
+        padding: 5px 0; }
   #quienes_somos .seccion_1 {
     padding: 25px 0 0 0; }
   #quienes_somos .seccion_2 div .div__img img {

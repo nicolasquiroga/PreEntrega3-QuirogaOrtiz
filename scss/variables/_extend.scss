@@ -2,3 +2,20 @@
     font-family: "titulos_grandes";
     font-size: 3rem;
 }
+
+%contenedor-img {
+    /* Ancho del div padre */
+    width: 24vw;
+    /* Alto del div padre */
+    height: 16vh;
+    /* Ocultar partes de la imagen que se desborden */
+    overflow: hidden;
+    /* Para posicionar la imagen de fondo */
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
