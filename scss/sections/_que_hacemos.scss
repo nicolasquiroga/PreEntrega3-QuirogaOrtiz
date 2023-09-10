@@ -60,15 +60,60 @@
             align-items: center;
             transition: background-color 0.15s;
 
-            .section__img {
-                display: block;
-                // width: 20vw;
-                height: 25vh;
-                width: fit-content;
-                // height: auto;
-                border-radius: 10px;
+            .contenedor_img {
+                width: 24vw;
+                /* Ancho del div padre */
+                height: 16vh;
+                /* Alto del div padre */
+                overflow: hidden;
+                /* Ocultar partes de la imagen que se desborden */
+                position: relative;
+                /* Para posicionar la imagen de fondo */
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
 
+            
+
+                .section__img {
+                    background-size: cover;
+                    /* Cubrir completamente el div padre */
+                    background-position: center;
+                    /* Centrar la imagen */
+                    width: 110%;
+                    // width: auto;
+                    /* Ajustar el ancho de la imagen al 100% del div padre */
+                    height: auto;
+                    // height: 100%;
+                    /* Ajustar automáticamente la altura según la relación de aspecto */
+
+                    // display: block;
+                    // // width: 20vw;
+                    // height: 25vh;
+                    // width: fit-content;
+                    // // height: auto;
+                    border-radius: 10px;
+
+                }
+                .section__img_xl {
+                    @extend .section__img;
+                    width: 130%;
+                    height: auto;
+                }
             }
+
+            
+
+            // .section__img {
+            //     display: block;
+            //     // width: 20vw;
+            //     height: 25vh;
+            //     width: fit-content;
+            //     // height: auto;
+            //     border-radius: 10px;
+
+            // }
 
             .titulo_imagen {
                 display: inline-block;
@@ -76,6 +121,7 @@
                 font-weight: 700;
                 font-size: large;
                 padding: 5px 0;
+                text-align: center;
             }
 
 
@@ -90,9 +136,11 @@
                     color: $color-tres;
 
                 }
-                .imagen_descripcion{
-                color: $color-uno;
+
+                .imagen_descripcion {
+                    color: $color-uno;
                 }
+
                 background-color: $color-dos;
                 // transition: 0.2s;
 

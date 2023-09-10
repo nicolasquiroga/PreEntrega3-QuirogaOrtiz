@@ -193,17 +193,39 @@ a {
       object-fit: cover;
       align-items: center;
       transition: background-color 0.15s; }
-      #que_hacemos .section div .section__img {
-        display: block;
-        height: 25vh;
-        width: fit-content;
-        border-radius: 10px; }
+      #que_hacemos .section div .contenedor_img {
+        width: 24vw;
+        /* Ancho del div padre */
+        height: 16vh;
+        /* Alto del div padre */
+        overflow: hidden;
+        /* Ocultar partes de la imagen que se desborden */
+        position: relative;
+        /* Para posicionar la imagen de fondo */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center; }
+        #que_hacemos .section div .contenedor_img .section__img, #que_hacemos .section div .contenedor_img .section__img_xl {
+          background-size: cover;
+          /* Cubrir completamente el div padre */
+          background-position: center;
+          /* Centrar la imagen */
+          width: 110%;
+          /* Ajustar el ancho de la imagen al 100% del div padre */
+          height: auto;
+          /* Ajustar automáticamente la altura según la relación de aspecto */
+          border-radius: 10px; }
+        #que_hacemos .section div .contenedor_img .section__img_xl {
+          width: 130%;
+          height: auto; }
       #que_hacemos .section div .titulo_imagen {
         display: inline-block;
         font-family: "titulos_grandes";
         font-weight: 700;
         font-size: large;
-        padding: 5px 0; }
+        padding: 5px 0;
+        text-align: center; }
       #que_hacemos .section div .imagen_descripcion {
         width: 20vw; }
       #que_hacemos .section div:hover {
@@ -389,7 +411,7 @@ a {
       width: 100%;
       align-items: center;
       padding-top: 15px; }
-      #que_hacemos .section div .section__img {
+      #que_hacemos .section div .section__img, #que_hacemos .section div .contenedor_img .section__img_xl {
         display: block;
         width: 70vw;
         height: auto;
