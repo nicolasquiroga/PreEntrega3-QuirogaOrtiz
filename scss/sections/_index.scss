@@ -21,7 +21,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('../../resources/bg_cyq_ing_civil.avif');
+            // background-image: url('../../resources/bg_cyq_ing_civil.avif');
+            // background-image: '../../resources/bg_cyq_ing_civil.avif';
+            background-image: '../../resources/bg_cyq_ing_civil.avif';
             background-size: cover;
             opacity: 0.35;
             z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
