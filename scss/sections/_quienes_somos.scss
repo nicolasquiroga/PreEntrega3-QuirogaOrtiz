@@ -6,12 +6,14 @@
     .seccion_1 {
         display: block;
         text-align: center;
+        height: 7rem;
 
         // h1 {
         //     font-family: "titulos_grandes";
         // }
         .titulo_h1_imagen {
             @extend %titulos-h1;
+            padding: 3rem 0 0 0;
 
         }
     }
@@ -42,7 +44,7 @@
                     /* display: inline-block; */
                     max-width: 25vw;
                     width: 25vw;
-                    border-radius: 15px;
+                    border-radius: 75px;
 
                 }
             }
@@ -51,6 +53,7 @@
 
                 .titulo_imagen {
                     font-family: "titulos_grandes";
+                    padding: 1rem 0 0 0;
                     font-size: 30px;
                     text-align: center;
                 }
