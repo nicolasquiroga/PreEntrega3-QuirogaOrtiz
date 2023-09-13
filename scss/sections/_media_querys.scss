@@ -398,9 +398,14 @@
     // TRABAJOS REALIZADOS page
 
     #trabajos_realizados {
-        div_0 {}
+        .div_0 {
+            .titulo_h1_pagina {
+                font-size: 30px;
+                padding: 2rem 0 0 0;
+            }
+        }
 
-        div_1 {
+        .div_1 {
             div {
                 &:hover {
                     p:not(.titulo_imagen) {
@@ -425,6 +430,7 @@
             display: flex;
             flex-direction: column;
             max-width: 95vw;
+            margin:0;
 
             .section_1__div1 {
                 width: 90vw;
@@ -462,7 +468,6 @@
                 margin: 2rem 0 2rem 0;
                 width: 90vw;
                 max-width: 95vw;
-                // background-color: $color-cuatro;
 
                 div {
                     width: 100%;
