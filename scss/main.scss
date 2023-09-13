@@ -6,6 +6,9 @@
 @import './variables/animations';
 
 
+// // BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 // SECCIONES
 // El siguiente formato de código NO FUNCIONA NO USAR, usar directamente sin url('....')
 @import './sections/header';
@@ -17,8 +20,7 @@
 @import './sections/contacto';
 @import './sections/media_querys';
 
-// BOOTSTRAP
-@import "../node_modules/bootstrap/scss/bootstrap";
+
 
 
 
