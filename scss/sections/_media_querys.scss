@@ -200,32 +200,84 @@
 
     /* CONTACTO */
 
-    #contacto .section-1 {
-        background-color: #2B2D42;
-    }
+    #contacto {
 
-    #contacto .section-1__form {
-        width: 100vw;
-        max-width: 100%;
-        margin: 0;
-    }
+        .section_1 {
+            // background-color: $color-cuatro;
+            max-width: 90vw;
+            width: 95vw;
 
-    #contacto .section-1 div {
-        max-width: 100%;
-        margin: 0;
-        background-color: #22aaa1;
-    }
+            // div {
+            //     max-width: 100%;
+            //     margin: 0;
+            //     background-color: #22aaa1;
+            // }
+            .section_1__div1 {
 
-    #contacto .como_llegar p {
-        font-family: "titulos_grandes";
-        font-size: 20px;
-    }
+                // background-color: $color-tres;
+                .titulo_h1_pagina {
+                    padding: 1.5rem 0 0 0;
+                    font-size: 2.2rem;
+                    text-align: center;
+                }
+            }
 
-    #contacto .como_llegar iframe {
-        width: 50vw;
-        height: 30vh;
-        border-radius: 10px;
+            .section_1__form {
+                // width: 100vw;
+                max-width: 100%;
+                margin: 0;
 
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    div {
+                        // width: 100%;
+                        width: 70vw;
+                        // background-color: $color-dos;
+
+                        .form-control,
+                        .input-group-text {
+                            width: 55vw;
+                        }
+
+                        .form-check-label,
+                        .form-check-input {
+                            margin: 0 0 0 7rem;
+                            align-self: start;
+                        }
+                    }
+                }
+            }
+
+            .como_llegar {
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0 0 3rem 0;
+
+                    // max-width: 100%;
+                    margin: 0;
+
+                    // background-color: #22aaa1;
+                    p {
+                        // font-family: "titulos_grandes";
+                        // font-size: 20px;
+                    }
+
+                    iframe {
+                        width: 80vw;
+                        height: 25rem;
+                        // border-radius: 30px;
+                        background-size: inherit;
+                    }
+                }
+            }
+
+        }
     }
 
     .footer {
@@ -424,14 +476,14 @@
             display: flex;
             flex-direction: column;
             max-width: 95vw;
-            margin:0;
+            margin: 0;
 
             .section_1__div1 {
                 width: 90vw;
 
 
-                h1 {
-                    font-size: 25px;
+                .titulo_h1_pagina {
+                    font-size: 1.5rem;
                     padding: 15px 0;
                 }
             }
@@ -448,11 +500,14 @@
 
                 div {
                     max-width: 100%;
+
                     // background-color: $color-dos;
-                   .btn {
+                    .btn {
                         margin: 1rem 0 0 0;
                     }
-                    .form-label, .input-group-text {
+
+                    .form-label,
+                    .input-group-text {
                         font-weight: bold;
                     }
                 }

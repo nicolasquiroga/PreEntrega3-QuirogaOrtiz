@@ -6,10 +6,13 @@
     //     margin: 20px;
     // }
 
-    .section-1 {
-        background-color: #2B2D42;
+    .section_1 {
+        // background-color: $color-dos;
+        max-width: 75vw;
 
-        .section-1__div1 {
+        .section_1__div1 {
+            // background-color: $color-cinco;
+
             .titulo_h1_pagina {
                 // margin: 5rem 0 0 0;
                 @extend %titulos-h1;
@@ -18,36 +21,57 @@
             }
         }
 
-        .section-1__form {
-            max-width: 75%;
-        }
-
-        div {
-            max-width: 50%;
-            background-color: #22aaa1;
+        .section_1__form {
+            margin: 0;
+            padding: 2rem 0 0 2rem;
+            max-width: 100%;
+            // background-color: $color-cuatro;
 
             div {
-                label {
-                    display: inline-block;
-                    margin: 0px 20px;
+                max-width: 100%;
+                // background-color: #22aaa1;
+
+                div {
+                    .form-label {
+                        display: inline-block;
+                        margin: 0px 20px;
+                        font-weight: bold;
+                        width: 60%;
+
+                    }
+
+                    .input-group-text,
+                    .form-control {
+                        font-weight: bold;
+                        width: 60%;
+                    }
+
                 }
+                .btn {
+                    margin: 1rem 0 0 0;
+                 }
             }
         }
+
+
     }
 
     .como_llegar {
-        margin: auto;
+        // margin: auto;
         justify-content: space-between;
+        background-color: $color-uno;
 
         p {
-            font-family: "titulos_grandes";
-            font-size: 20px;
+            @extend %titulos-h1;
+            font-size: 35px;
+            padding: 2rem 0 0 2rem;
         }
 
         iframe {
-            width: 50vw;
-            height: 40vh;
-            border-radius: 10px;
+            padding: 2rem 0 0 2rem;
+            width: 45vw;
+            height: 30rem;
+            border-radius: 20px;
 
         }
 
