@@ -1,16 +1,16 @@
+// VARIABLES
+@import './variables/colors';
+
 // // BOOTSTRAP
+@import "./variables/boostrap_variables_custom";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // VARIABLES
-@import './variables/colors';
 @import './variables/fonts';
 @import './variables/globales';
 @import './variables/extend';
 @import './variables/animations';
-@import './variables/mixin';
-
-
-
+@import './variables/bootstrap_custom';
 
 // SECCIONES
 // El siguiente formato de código NO FUNCIONA NO USAR, usar directamente sin url('....')
