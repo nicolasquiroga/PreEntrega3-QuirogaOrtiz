@@ -142,6 +142,10 @@
 
         .seccion_1 {
             padding: 25px 0 0 0;
+
+            p {
+                font-size: 1.5rem;
+            }
         }
 
         .seccion_2 {
@@ -422,7 +426,11 @@
 
         .seccion_1 {
             padding: 25px 0 0 0;
-            height: 10rem;
+            height: auto;
+
+            p {
+                font-size: 1.25rem;
+            }
         }
 
         .seccion_2 {
@@ -497,18 +505,24 @@
                 border-radius: 20px;
                 padding: 1rem 0 1rem 0;
 
-
                 div {
-                    max-width: 100%;
+                    div {
+                        max-width: 100%;
 
-                    // background-color: $color-dos;
-                    .btn {
-                        margin: 1rem 0 0 0;
-                    }
+                        // background-color: $color-dos;
+                        .btn {
+                            margin: 1rem 0 0 0;
+                        }
 
-                    .form-label,
-                    .input-group-text {
-                        font-weight: bold;
+                        .form-label,
+                        .input-group-text {
+                            font-weight: bold;
+                        }
+
+                        .form-control {
+                            width: 60vw;
+                        }
+
                     }
                 }
             }
@@ -537,11 +551,6 @@
         }
     }
 
-    // #contacto div {
-    //     width: 65vw;
-    //     margin: auto;
-    //     max-width: 100vw;
-    // }
 
 
 }

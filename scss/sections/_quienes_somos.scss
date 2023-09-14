@@ -6,15 +6,18 @@
     .seccion_1 {
         display: block;
         text-align: center;
-        height: 7rem;
+        height: auto;
 
-        // h1 {
-        //     font-family: "titulos_grandes";
-        // }
+
         .titulo_h1_imagen {
             @extend %titulos-h1;
-            padding: 3rem 0 0 0;
+            padding: 3rem 0 4rem 0;
 
+        }
+
+        p {
+            // background-color: $color-tres;
+            font-size: 2rem;
         }
     }
 
@@ -23,7 +26,13 @@
 
         div {
 
+
+            transition: transform 0.5s;
+
             .div__img {
+                &:hover {
+                    @include scale_custom(1.05);
+                }
 
 
                 margin: 0 0 2rem 0;
@@ -47,6 +56,7 @@
                     border-radius: 75px;
 
                 }
+
             }
 
             .div__titulo_imagen {

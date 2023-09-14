@@ -26,7 +26,8 @@
             background-image: url("../resources/bg_cyq_ing_civil.avif");
             background-size: cover;
             opacity: 0.35;
-            z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+            z-index: -1;
+            /* Coloca el pseudo-elemento detrás del contenido */
         }
 
         .div__h1 {
@@ -43,7 +44,8 @@
 
 
             &:hover {
-                transform: scale(1.4);
+                @include scale_custom(1.4);
+                // transform: scale(1.4);
 
             }
         }
@@ -57,10 +59,12 @@
             max-width: 90vw;
             // background-color: $color-uno;
             border-radius: 10px;
-text-align: center;
+            text-align: center;
             transition: 0.5s;
+
             &:hover {
-                transform: scale(1.05);
+                @include scale_custom(1.05);
+                // transform: scale(1.05);
 
             }
         }

@@ -12,6 +12,10 @@
         img {
             width: 20vh;
             height: auto;
+            transition: transform 0.5s;
+            &:hover {
+                @include scale_custom(1.05);
+            }
         }
     }
 
@@ -32,10 +36,11 @@
                 a {
                     text-decoration: none;
                     color: $color-dos;
-                    transition: 0.2s;
+                    transition: 0.3s;
 
                     &:hover {
                         color: $color-tres;
+                        @include scale_custom(1.05);
                     }
                 }
 

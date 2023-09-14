@@ -1,26 +1,40 @@
 /* Formato al FOOTER */
 .footer {
     display: flex;
+    flex-direction: row;
     height: 13vh;
     background-color: $color-uno;
     align-items: center;
     justify-content: space-around;
 
+    p {
+        display: inline-block;
+    }
+
     .img-sm {
         display: none;
     }
 
-    img {
+    .img-lg {
         display: inline-block;
         width: 15vh;
         height: auto;
+
+        &:hover {
+            -webkit-animation: rotate-scale-down 0.65s linear both;
+            animation: rotate-scale-down 0.65s linear both;
+        }
+
     }
 
     a {
         display: inline-block;
+        transition: transform 0.5s;
+
+        &:hover {
+            @include scale_custom(1.05);
+        }
     }
 
-    p {
-        display: inline-block;
-    }
+
 }
