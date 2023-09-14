@@ -9383,7 +9383,7 @@ a {
   animation: rotate-scale-down 0.65s linear both; }
 
 .navbar-toggler-icon {
-  background-image: url("../../resources/menu-boxed.svg"); }
+  background-image: url("../resources/menu-boxed.svg"); }
 
 /* Formato General a todos los headers */
 .header {
