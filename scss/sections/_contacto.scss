@@ -1,23 +1,13 @@
 /* Formato Hoja Contacto */
 #contacto {
 
-    // div {
-    //     display: block;
-    //     margin: 20px;
-    // }
 
     .section_1 {
-        // background-color: $color-dos;
         max-width: 75vw;
 
         .section_1__div1 {
-            // background-color: $color-cinco;
-
             .titulo_h1_pagina {
-                // margin: 5rem 0 0 0;
                 @extend %titulos-h1;
-                // padding: 5rem 0 0 0;
-                // text-align: center;
             }
         }
 
@@ -25,11 +15,11 @@
             margin: 0;
             padding: 2rem 0 0 2rem;
             max-width: 100%;
-            // background-color: $color-cuatro;
+
 
             div {
                 max-width: 100%;
-                // background-color: #22aaa1;
+
 
                 div {
                     .form-label {
@@ -47,9 +37,10 @@
                     }
 
                 }
+
                 .btn {
                     margin: 1rem 0 0 0;
-                 }
+                }
             }
         }
 
@@ -57,7 +48,7 @@
     }
 
     .como_llegar {
-        // margin: auto;
+
         justify-content: space-between;
         background-color: $color-uno;
 

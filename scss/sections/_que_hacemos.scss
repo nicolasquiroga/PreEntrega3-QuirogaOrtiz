@@ -1,4 +1,4 @@
-/* Formato a Hoja Qué hacemos */
+/* Formato a página Qué hacemos */
 
 #que_hacemos {
     display: flex;
@@ -11,6 +11,10 @@
         margin: 20px;
         display: flex;
         justify-content: center;
+
+        .titulo_h1_pagina {
+            @extend %titulos-h1;
+        }
     }
 
     .section {
@@ -72,18 +76,7 @@
                     /* Centrar la imagen */
                     max-width: 400px;
                     width: 110%;
-
-                    // width: auto;
-                    /* Ajustar el ancho de la imagen al 100% del div padre */
                     height: auto;
-                    // height: 100%;
-                    /* Ajustar automáticamente la altura según la relación de aspecto */
-
-                    // display: block;
-                    // // width: 20vw;
-                    // height: 25vh;
-                    // width: fit-content;
-                    // // height: auto;
                     border-radius: 10px;
 
                 }
@@ -95,18 +88,6 @@
                 }
             }
 
-
-
-            // .section__img {
-            //     display: block;
-            //     // width: 20vw;
-            //     height: 25vh;
-            //     width: fit-content;
-            //     // height: auto;
-            //     border-radius: 10px;
-
-            // }
-
             .titulo_imagen {
                 display: inline-block;
                 font-family: "titulos_grandes";
@@ -116,26 +97,20 @@
                 text-align: center;
             }
 
-
-
             .imagen_descripcion {
                 width: 20vw;
-                // color: $color-cuatro;
+                
             }
 
             &:hover {
+                background-color: $color-dos;
                 .titulo_imagen {
                     color: $color-tres;
-
                 }
 
                 .imagen_descripcion {
                     color: $color-uno;
                 }
-
-                background-color: $color-dos;
-                // transition: 0.2s;
-
             }
         }
 

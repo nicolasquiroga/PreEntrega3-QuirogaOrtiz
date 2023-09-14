@@ -5,7 +5,6 @@
     justify-content: space-around;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    /* width: 100vw;  */
     height: 15vh;
 
     div {
@@ -13,6 +12,7 @@
             width: 20vh;
             height: auto;
             transition: transform 0.5s;
+
             &:hover {
                 @include scale_custom(1.05);
             }
@@ -59,7 +59,7 @@
     }
 }
 
-// body .navbar, .navbar-expand-lg, .bg-light {
+
 body .navbar {
     display: none;
 }

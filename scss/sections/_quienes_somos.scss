@@ -9,14 +9,13 @@
         height: auto;
 
 
-        .titulo_h1_imagen {
+        .titulo_h1_pagina {
             @extend %titulos-h1;
             padding: 3rem 0 4rem 0;
 
         }
 
         p {
-            // background-color: $color-tres;
             font-size: 2rem;
         }
     }
@@ -25,8 +24,6 @@
     .seccion_2 {
 
         div {
-
-
             transition: transform 0.5s;
 
             .div__img {
@@ -34,27 +31,14 @@
                     @include scale_custom(1.05);
                 }
 
-
                 margin: 0 0 2rem 0;
                 padding: 1rem 0 0 0;
                 border-radius: 15px;
 
-                // &:hover {
-                //     background-color: $color-dos;
-                //     .titulo_imagen {
-                //         color: $color-tres;
-                //     }
-                //     .div__texto {
-                //         color: $color-uno;
-                //     }
-                // }
-
                 img {
-                    /* display: inline-block; */
                     max-width: 25vw;
                     width: 25vw;
                     border-radius: 75px;
-
                 }
 
             }

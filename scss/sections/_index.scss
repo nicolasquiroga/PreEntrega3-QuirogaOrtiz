@@ -21,31 +21,27 @@
             left: 0;
             width: 100%;
             height: 100%;
-            // background-image: url('../../resources/bg_cyq_ing_civil.avif');
-            // background-image: '../../resources/bg_cyq_ing_civil.avif';
             background-image: url("../resources/bg_cyq_ing_civil.avif");
             background-size: cover;
             opacity: 0.35;
             z-index: -1;
-            /* Coloca el pseudo-elemento detrás del contenido */
         }
 
         .div__h1 {
             max-width: 65vw;
-            font-family: "titulos_grandes";
-            // font-size: 5vw;
+            font-family: "titulos_grandes", sans-serif;
+
             font-size: 5rem;
             color: $color-dos;
             margin: 20px;
             padding: 10px 40px;
-            // background-color: $color-uno;
+
             border-radius: 15px;
             transition: transform 2s;
 
 
             &:hover {
                 @include scale_custom(1.4);
-                // transform: scale(1.4);
 
             }
         }
@@ -57,14 +53,14 @@
             padding: 0 15px;
             width: max-content;
             max-width: 90vw;
-            // background-color: $color-uno;
+
             border-radius: 10px;
             text-align: center;
             transition: 0.5s;
 
             &:hover {
                 @include scale_custom(1.05);
-                // transform: scale(1.05);
+
 
             }
         }
